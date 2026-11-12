@@ -23,13 +23,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Reggae+One&family=Dela+Gothic+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="tokens.css?v=20261112184147">
-  <link rel="stylesheet" href="base.css?v=20261112184147">
-  <link rel="stylesheet" href="style.css?v=20261112184147">
+  <link rel="stylesheet" href="tokens.css?v=20261112201834">
+  <link rel="stylesheet" href="base.css?v=20261112201834">
+  <link rel="stylesheet" href="style.css?v=20261112201834">
 </head>
 <body>
   <svg width="0" height="0" class="defs" aria-hidden="true">
     <symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <filter id="brushfx" x="-5%" y="-10%" width="110%" height="120%"><feMorphology operator="dilate" radius="0.7" in="SourceGraphic" result="d"/><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="5" result="n"/><feDisplacementMap in="d" in2="n" scale="2.2"/></filter>
     <filter id="rough"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="6"/></filter>
   </svg>
 
@@ -69,7 +70,7 @@
 
                 <section class="page page--hero" id="top" data-tone="light" data-label="TOP" data-next="はじめに">
           <h1 class="vh">株式会社渡工業 足場職人 採用サイト</h1>
-          <video class="hero__video" src="assets/hero.mp4?v=20261112184147" poster="assets/hero-poster.jpg?v=20261112184147" autoplay muted loop playsinline></video>
+          <video class="hero__video" src="assets/hero.mp4?v=20261112201834" poster="assets/hero-poster.jpg?v=20261112201834" autoplay muted loop playsinline></video>
           <p class="hero__swipe" aria-hidden="true"><span>SWIPE UP</span></p>
         </section>
 
@@ -99,15 +100,17 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">PRESIDENT</p>
-              <h2 class="hd rv">会社の<wbr>利益より、<wbr><span class="nb">社員の利益。</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">会社の利益より、</span><br><span class="nb">社員の利益。</span></span></h2>
             </div>
-            <p class="body boss__lead"><span class="ln rv">代表自身、<wbr>かつては<wbr>職人として<wbr>現場で<wbr>働いていました。</span><span class="ln rv">だからこそ、<wbr>雇われていた<wbr>頃に<wbr>感じた<wbr>不満も、<wbr>よく<wbr>分かっています。</span></p>
             <div class="boss2">
+              <div class="boss2__left">
+              <p class="body boss__lead"><span class="ln rv">代表自身、<wbr>かつては<wbr>職人として<wbr>現場で<wbr>働いていました。</span><span class="ln rv">だからこそ、<wbr>雇われていた<wbr>頃に<wbr>感じた<wbr>不満も、<wbr>よく<wbr>分かっています。</span></p>
               <ul class="gripes">
                 <li class="gripe" data-on-photo style="--i:0"><span class="vh">◆</span>仕事が<wbr>終わっているのに<wbr>帰れない。</li>
                 <li class="gripe" data-on-photo style="--i:1"><span class="vh">◆</span>頑張っても<wbr>給与が<wbr>なかなか<wbr>上がらない。</li>
                 <li class="gripe" data-on-photo style="--i:2"><span class="vh">◆</span>仕事に<wbr>必要な<wbr>道具まで<wbr>自腹で<wbr>買わされる。</li>
               </ul>
+              </div>
               <div class="boss2__photo" data-bleed><img class="boss2__cut" src="assets/photo/cut_boss.webp" alt="渡工業の代表" width="900" height="1185"></div>
             </div>
             <div class="txt">
@@ -128,7 +131,7 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">WORK STYLE</p>
-              <h2 class="hd rv">最短距離で、<wbr><span class="nb">最大の成果を。</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">最短距離で、</span><br><span class="nb">最大の成果を。</span></span></h2>
             </div>
             <div class="clock rv" aria-hidden="true">
               <svg class="clock__face" viewBox="0 0 100 100">
@@ -167,7 +170,7 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">SALARY</p>
-              <h2 class="hd rv"><span class="nb">頑張っているのに、</span><wbr><span class="nb">稼げない。</span><wbr>そんな<wbr>会社で<wbr><span class="nb">働く意味ある？</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">頑張っているのに、</span><br><span class="nb">稼げない。</span><br><span class="nb">そんな会社で働く意味ある？</span></span></h2>
             </div>
             <div class="txt">
               <p class="body"><span class="ln brush-lead brushin">昇給は<wbr>随時。</span><span class="ln rv">年に1回の<wbr>査定を<wbr>待つ<wbr>必要は<wbr>ありません。</span></p>
@@ -181,7 +184,7 @@
             <div class="txt">
               <p class="pay__month don" style="--d:2"><span class="pay__month__in cu" style="--cd:2">月収30万～40万円も<wbr>現実的！</span></p>
               <p class="pay__note rv">※給与額は<wbr>経験・能力による</p>
-              <p class="pay__close brush-close brush-close--red">稼ぎたい<wbr>気持ちに、<wbr>ちゃんと<wbr>応える<wbr>会社です。</p>
+              <p class="pay__close brush-close brush-close--red"><span class="ln">稼ぎたい気持ちに、</span><span class="ln">ちゃんと応える会社です。</span></p>
             </div>
           </div>
         </section>
@@ -197,12 +200,12 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">BONUS</p>
-              <h2 class="hd rv"><span class="nb">稼げるチャンスは、</span><wbr><span class="nb">毎月の給与</span><wbr><span class="nb">だけじゃない。</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">稼げるチャンスは、</span><br><span class="nb">毎月の給与だけじゃない。</span></span></h2>
             </div>
             <p class="body"><span class="ln rv">日々の<wbr>頑張りを<wbr>評価する<wbr>仕組みも<wbr>用意しています。</span></p>
             <ul class="cards">
-              <li class="card card--big don" style="--d:0"><span class="vh">◆</span><span class="card__h">賞与年2回</span> <span class="card__b">夏・冬に<wbr>支給<wbr>（30,000円～<span class="nb"><span class="card__max pop cu" style="--cd:0">500,000</span>円）</span></span></li>
-              <li class="card card--red card--coin don" style="--d:1"><span class="vh">◆</span><span class="card__h">職長手当</span> <span class="card__b cu" style="--cd:1">月15,000円</span></li>
+              <li class="card card--big don" style="--d:0"><span class="vh">◆</span><span class="card__h">賞与年2回</span> <span class="card__b">夏・冬に<wbr>支給<wbr>（30,000円～<span class="nb card__line"><span class="card__max pop cu" style="--cd:0">500,000</span>円）</span></span></li>
+              <li class="card card--red card--coin don" style="--d:1"><span class="vh">◆</span><span class="card__h">職長手当</span> <span class="card__b card__b--big cu" style="--cd:1">月15,000円</span></li>
               <li class="card card--red card--up don" style="--d:2"><span class="vh">◆</span><span class="card__h">随時昇給</span> <span class="card__b">成長や<wbr>頑張りを<wbr>その<wbr>都度評価</span></li>
             </ul>
             <div class="txt">
@@ -221,14 +224,14 @@
           <div class="page__inner">
             <div class="brush">
               <svg class="brush__bg" viewBox="0 0 400 140" preserveAspectRatio="none" aria-hidden="true"><path d="M8 40 C 60 18, 140 22, 220 16 S 360 10, 394 26 L 390 60 C 330 70, 300 64, 380 92 L 372 122 C 280 132, 160 120, 60 128 C 30 130, 14 118, 18 104 C 40 96, 20 86, 6 80 Z" filter="url(#rough)"/></svg>
-              <h2 class="brush__ttl" data-on-photo><span class="nb">社員への投資が、</span><wbr><span class="nb">会社にとって</span><wbr><span class="nb">一番いい投資</span><wbr><span class="nb">だから。</span></h2>
+              <h2 class="brush__ttl" data-on-photo><span class="nb">社員への投資が、</span><br><span class="nb">会社にとって</span><br><span class="nb">一番いい投資だから。</span></h2>
             </div>
             <figure class="invest-photo rv" data-bleed><img src="assets/photo/cut_crew.webp" alt="プラントを背に並ぶ渡工業の職人たち" width="900" height="459"></figure>
             <ul class="pledges"><li class="pledge" style="--i:0"><span class="vh">・</span>給与を<wbr>上げる。<wbr> </li><li class="pledge" style="--i:1"><span class="vh">・</span>仕事に<wbr>必要なものを<wbr>用意する。<wbr> </li><li class="pledge" style="--i:2"><span class="vh">・</span>働きやすい<wbr>環境をつくる。</li></ul>
             <div class="txt">
               <p class="body"><span class="ln rv">会社にとっては、<wbr>もちろん<wbr>コストが<wbr>かかること。<wbr>それでも<wbr>代表が<wbr>社員への<wbr>還元を<wbr>惜しまないのは、<wbr>社員が<wbr>気持ちよく<wbr>働けることが、<wbr>結果的に<wbr>会社の<wbr>成長に<wbr>つながると<wbr>考えているから。</span></p>
               <p class="body"><span class="ln rv">会社だけが<wbr>得をするのではなく、<wbr> <wbr>働く人にも<wbr>メリットがある<wbr>会社へ。</span></p>
-              <p class="brush-close">社員が<wbr>豊かにならない<wbr>会社に、<wbr><span class="nb">成長する意味はない。</span></p>
+              <p class="brush-close brush-close--big"><span class="ln">社員が豊かにならない会社に、</span><span class="ln">成長する意味はない。</span></p>
             </div>
           </div>
         </section>
@@ -244,11 +247,11 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">HOLIDAY</p>
-              <h2 class="hd rv"><span class="nb">稼ぐために、</span><wbr><span class="nb">その人生を</span><wbr><span class="nb">犠牲にするな。</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">稼ぐために、</span><br><span class="nb">その人生を犠牲にするな。</span></span></h2>
             </div>
             <div class="off">
               <div class="cal" aria-hidden="true">
-                <span class="cal__d">月</span><span class="cal__d">火</span><span class="cal__d">水</span><span class="cal__d">木</span><span class="cal__d">金</span><span class="cal__d cal__d--off">土</span><span class="cal__d cal__d--off">日</span>
+                <span class="cal__d" style="--i:0">月</span><span class="cal__d" style="--i:1">火</span><span class="cal__d" style="--i:2">水</span><span class="cal__d" style="--i:3">木</span><span class="cal__d" style="--i:4">金</span><span class="cal__d cal__d--off" style="--i:5">土</span><span class="cal__d cal__d--off" style="--i:6">日</span>
               </div>
               <figure class="off-photo slap" data-bleed><img src="assets/photo/bbq.jpg" alt="仕事終わりにバーベキューで乾杯する仲間" width="1000" height="750"></figure>
             </div>
@@ -275,13 +278,13 @@
             <figure class="work-photo" data-bleed><img src="assets/photo/cut_work.webp" alt="プラントで足場を組み立てる職人" width="900" height="678"></figure>
             <div class="head">
               <p class="page__label en rv" aria-hidden="true">OUR WORK</p>
-              <h2 class="hd rv"><span class="nb">足場を組む。</span><wbr><span class="nb">ただ、</span><wbr><span class="nb">それだけじゃない。</span></h2>
+              <h2 class="hd rv"><span class="hd__t"><span class="nb">足場を組む。</span><br><span class="nb">ただ、それだけじゃない。</span></span></h2>
             </div>
             <p class="body"><span class="ln rv">渡工業が<wbr>手掛けるのは、<wbr>工場・<wbr>プラントなどでの<wbr>足場架設工事。<wbr>さまざまな<wbr>工事を<wbr>安全かつ<wbr>スムーズに<wbr>進めるために、<wbr>職人さんが<wbr>作業する<wbr>足場を<wbr>組み立て、<wbr>工事が<wbr>終われば<wbr>解体します。</span></p>
             <ul class="tags"><li class="tag" style="--i:0"><span class="vh">◆</span>足場材の<wbr>運搬</li><li class="tag" style="--i:1"><span class="vh">◆</span>足場の<wbr>組み立て・設置</li><li class="tag" style="--i:2"><span class="vh">◆</span>現場に<wbr>合わせた<wbr>足場の<wbr>調整</li><li class="tag" style="--i:3"><span class="vh">◆</span>工事完了後の<wbr>解体・撤去</li><li class="tag" style="--i:4"><span class="vh">◆</span>溶接・ガス溶接<wbr>関連の<wbr>作業</li></ul>
             <div class="txt">
               <p class="body"><span class="ln rv">現場ごとに<wbr>異なる<wbr>環境で、<wbr>チームで<wbr>協力しながら<wbr>仕事を<wbr>進めていきます。</span></p>
-              <p class="brush-close brush-close--red">いろんな<wbr>現場を<wbr>支える、<wbr><span class="nb">なくてはならない仕事です。</span></p>
+              <p class="brush-close brush-close--red"><span class="ln">いろんな現場を支える、</span><span class="ln">なくてはならない仕事です。</span></p>
             </div>
           </div>
         </section>
@@ -311,7 +314,7 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en" aria-hidden="true">REQUIREMENTS</p>
-              <h2 class="page__label hd" aria-hidden="true">募集要項</h2>
+              <h2 class="page__label hd" aria-hidden="true"><span class="hd__t">募集要項</span></h2>
             </div>
             <div class="sheet">
               <dl class="req">
@@ -338,7 +341,7 @@
           <div class="page__inner">
             <div class="head">
               <p class="page__label en" aria-hidden="true">ENTRY</p>
-              <h2 class="page__label hd hd--on-red" aria-hidden="true">エントリー</h2>
+              <h2 class="page__label hd hd--on-red" aria-hidden="true"><span class="hd__t">エントリー</span></h2>
             </div>
             <div class="sheet">
               <form class="form" action="#" method="post" data-static>
@@ -401,7 +404,7 @@
     </aside>
   </div>
 
-  <script src="swipe.js?v=20261112184147"></script>
-  <script src="site.js?v=20261112184147"></script>
+  <script src="swipe.js?v=20261112201834"></script>
+  <script src="site.js?v=20261112201834"></script>
 </body>
 </html>

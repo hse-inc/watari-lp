@@ -73,6 +73,6 @@
   --dur-in: 560ms;
   --dur-hover: 300ms;
 }
-@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
+@media (max-height: 600px) { :root { --pad-y: 0.7em; --fs-head: 1.42em; } }
 
 @media (min-width: 960px) { :root { --fs-base: clamp(15px, 1.9dvh, 17px); } }
