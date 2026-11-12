@@ -63,12 +63,11 @@
 
 .pg-fv .page__inner { gap: var(--sp-p); }
 .fv-photo {
-  position: relative; display: grid; place-items: end center; margin: 0 calc(var(--gutter) * -1); height: clamp(130px, calc(100dvh - 35em), 34dvh); overflow: hidden; flex-shrink: 0;
+  position: relative; display: grid; place-items: end center; margin: 0 calc(var(--gutter) * -1); height: clamp(130px, calc(100dvh - 35em), 34dvh); flex-shrink: 0; clip-path: polygon(0 -100vh, 100% -100vh, 100% 84%, 0 100%);
   background: radial-gradient(circle at 50% 70%, var(--color-red) 0 22%, transparent 60%), var(--bg-dark);
   box-shadow: 0 -240px 0 160px var(--color-navy);
 }
-.fv-photo::after { content: ""; position: absolute; z-index: 2; left: 0; right: 0; bottom: -1px; height: 16%; background: var(--color-paper); clip-path: polygon(0 100%, 100% 0, 100% 100%); }
-.fv-photo::before { content: ""; position: absolute; left: 50%; top: 70%; width: 180%; aspect-ratio: 1; translate: -50% -50%; background: repeating-conic-gradient(var(--color-gold) 0 4deg, transparent 4deg 14deg); opacity: 0.28; animation: spin 30s linear infinite; }
+.fv-photo::before { content: ""; position: absolute; left: 50%; top: 60%; width: 260%; aspect-ratio: 1; translate: -50% -50%; background: repeating-conic-gradient(var(--color-gold) 0 4deg, transparent 4deg 14deg); opacity: 0.28; animation: spin 30s linear infinite; }
 .fv-photo__cut { position: absolute; left: 50%; bottom: -1%; height: 97%; width: auto; max-width: none; translate: -42% 0; animation: kenburns 10s ease-in-out infinite alternate; transform-origin: 50% 100%; }
 @keyframes kenburns { from { scale: 1; } to { scale: 1.09; } }
 .fv-copy {
@@ -310,7 +309,7 @@
 .page.is-active .fv-close__in::after { animation: paint-in 420ms cubic-bezier(1, 0.26, 0, 1) 2.5s both; }
 .page.is-active .fv-close__in { animation: txt-in 300ms ease 2.4s both; }
 
-.boss2 { display: grid; grid-template-columns: 1fr 36%; align-items: end; gap: 0.4em; }
+.boss2 { display: grid; grid-template-columns: 1fr 36%; align-items: stretch; gap: 0.4em; }
 .boss2__left { display: grid; gap: var(--sp-p); }
 .gripes { position: relative; z-index: 2; display: grid; gap: 0.45em; }
 .gripe { position: relative; padding: 0.45em 0.7em 0.45em 2em; background: var(--color-base); box-shadow: var(--shadow-soft); font-weight: 900; line-height: 1.45; color: var(--color-navy-deep); clip-path: polygon(0 4%, 97% 0, 100% 50%, 98% 100%, 2% 96%, 0 50%); }
@@ -318,11 +317,11 @@
 .gripe::before { content: ""; position: absolute; left: 0.55em; top: 50%; width: 0.95em; height: 0.95em; translate: 0 -50%; background: var(--color-red); clip-path: polygon(18% 0, 50% 32%, 82% 0, 100% 18%, 68% 50%, 100% 82%, 82% 100%, 50% 68%, 18% 100%, 0 82%, 32% 50%, 0 18%); }
 .page.is-active .gripe { animation: slap 520ms var(--ease-out) calc(600ms + var(--i) * 260ms) both; }
 .page:not(.is-active) .gripe { opacity: 0; }
-.boss2__photo { position: relative; height: clamp(96px, calc(100dvh - 36em), 32dvh); }
-.boss2__cut { position: absolute; right: -30%; bottom: -0.4em; height: 104%; width: auto; max-width: none; filter: drop-shadow(5px 5px 0 var(--color-red)); }
+.boss2__photo { position: relative; min-height: 110px; }
+.boss2__cut { position: absolute; right: -30%; bottom: -0.4em; height: 118%; width: auto; max-width: none; filter: drop-shadow(5px 5px 0 var(--color-red)); }
 .page.is-active .boss2__cut { animation: rise-in 700ms var(--ease-out) 300ms both; }
 @keyframes rise-in { from { opacity: 0; translate: 40px 30px; } to { opacity: 1; translate: 0 0; } }
-.bubble { position: relative; padding: 0.55em 0.8em; background: var(--color-navy-deep); color: var(--color-on-dark); font-family: var(--font-brush); font-size: 1.12em; line-height: 1.5; border-radius: 0.6em; }
+.bubble { position: relative; padding: 0.5em 0.8em; background: var(--color-navy-deep); color: var(--color-on-dark); font-family: var(--font-brush); font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / (var(--n) + 1.7)); line-height: 1.5; border-radius: 0.6em; }
 .bubble::after { content: ""; position: absolute; right: 18%; top: -0.7em; width: 1.2em; height: 0.8em; background: var(--color-navy-deep); clip-path: polygon(30% 100%, 100% 0, 80% 100%); }
 .page.is-active .bubble { animation: pop 520ms ease-out 1.5s both; }
 
@@ -407,3 +406,5 @@
   .pg-boss .page__inner, .pg-pay .page__inner, .pg-time .page__inner, .pg-invest .page__inner { gap: 0.4em; }
   .pg-boss .txt, .pg-pay .txt, .pg-time .txt, .pg-invest .txt { gap: 0.2em; }
 }
+
+.hd--fit { width: 100%; font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / (var(--n) + 2.2)); }
