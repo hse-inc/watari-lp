@@ -1,0 +1,78 @@
+:root {
+  
+  --color-red: #EE1329;          
+  --color-red-deep: #B80C1E;     
+  --color-navy: #27356E;         
+  --color-navy-deep: #161F45;    
+  --color-gold: #C09D4C;         
+  --color-gold-hi: #F0D58C;      
+  --color-gold-deep: #8C6B22;    
+  --color-paper: #F4F0E8;        
+  --color-paper-2: #E9E2D3;      
+
+  --color-ink: #1E1E22;          
+  --color-main: #27356E;         
+  --color-main-2: #B80C1E;       
+  --color-accent: #EE1329;       
+  --color-accent-2: #B80C1E;     
+  --color-base: #ffffff;         
+  --color-pale: #E9E2D3;         
+  --color-line: #D6CCB8;         
+  --color-on-dark: #ffffff;      
+  --color-on-dark-line: rgb(255 255 255 / 0.72);
+  --color-error: #c8312b;
+  --color-shadow: rgb(22 31 69 / 0.22);
+  --color-veil: rgb(15 18 40 / 0.62);      
+  --color-veil-2: rgb(15 18 40 / 0);
+  --color-text-shadow: rgb(0 0 0 / 0.45);
+  --color-emblem: rgb(255 255 255 / 0.10); 
+  --color-emblem-dark: rgb(39 53 110 / 0.07); 
+
+  
+  --bg-dark: linear-gradient(160deg, var(--color-navy) 0%, var(--color-navy-deep) 100%);
+  --bg-accent: linear-gradient(90deg, var(--color-red) 0%, var(--color-red-deep) 100%);
+  --bg-gold: linear-gradient(180deg, var(--color-gold-hi) 0%, var(--color-gold) 55%, var(--color-gold-deep) 100%);
+
+  
+  --font-body: "Noto Sans JP", "Hiragino Sans", "Hiragino Kaku Gothic ProN", system-ui, sans-serif;
+  --font-head: "Noto Sans JP", "Hiragino Sans", sans-serif;
+  --font-impact: "Dela Gothic One", "Noto Sans JP", sans-serif;   
+  --font-brush: "Reggae One", "Dela Gothic One", sans-serif;   
+  --font-en: "Outfit", "Noto Sans JP", sans-serif;
+  --fs-min: 13px;
+  --fs-base: clamp(var(--fs-min), min(2.2dvh, 3.7vw), 15px);
+  --fs-ui: max(var(--fs-min), 13px);
+  --fs-input: 16px;
+  --fw-body: 500;
+  --ls-body: 0.03em;
+  --lh-body: 1.78;
+  --lh-head: 1.32;
+  --fs-head: 1.62em;             
+  --ls-head: 0;
+
+  
+  --col: 480px;
+  --header-h: 56px;
+  --gutter: 22px;
+  --sp-1: 0.45em;
+  --sp-p: 0.7em;
+  --sp-g: 1.05em;
+  --pad-y: 1.2em;
+  --next-h: 0px;
+  --radius-pill: 999px;
+  --radius-s: 4px;
+  --shadow-soft: 0 6px 18px 0 var(--color-shadow);
+  --shadow-column: 0 0 28px 0 var(--color-shadow);
+  --frame: 8px;                  
+  --tilt: -6deg;                 
+
+  
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-pop: cubic-bezier(0.2, 1.4, 0.4, 1);
+  --rise: 28px;
+  --dur-in: 560ms;
+  --dur-hover: 300ms;
+}
+@media (max-height: 600px) { :root { --pad-y: 0.7em; } }
+
+@media (min-width: 960px) { :root { --fs-base: clamp(15px, 1.9dvh, 17px); } }
