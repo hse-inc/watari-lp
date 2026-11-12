@@ -150,7 +150,7 @@
 .card__h { font-weight: 900; font-size: 1.05em; color: var(--color-navy); }
 .card__b { font-weight: 700; font-size: max(var(--fs-min), 0.95em); line-height: 1.5; }
 .card__line { display: block; }
-.card__max { font-family: var(--font-impact); font-size: 2.5em; line-height: 1; background: var(--bg-gold); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(2px 2px 0 var(--color-red-deep)); }
+.card__max { font-family: var(--font-impact); font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 7.6); line-height: 1; background: var(--bg-gold); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(2px 2px 0 var(--color-red-deep)); }
 
 .brush { position: relative; display: grid; place-items: center; margin-inline: calc(var(--gutter) * -0.5); padding: 1.1em 1em 1.3em; }
 .brush__bg { position: absolute; inset: 0; width: 100%; height: 100%; fill: var(--color-base); clip-path: inset(-20% 100% -40% -10%); }
@@ -360,7 +360,7 @@
 .page.is-active .talk__in { animation: pop 520ms ease-out 1.4s both; }
 
 .steps { display: grid; gap: 0.25em; }
-.step { justify-self: stretch; padding: 0.2em 0.8em; background: var(--color-navy-deep); color: var(--color-on-dark); font-weight: 900; margin-left: calc(var(--i) * 1.6em); }
+.step { justify-self: start; font-size: 1.12em; padding: 0.2em 0.8em; background: var(--color-navy-deep); color: var(--color-on-dark); font-weight: 900; margin-left: calc(var(--i) * 2.2em); }
 .page.is-active .step { animation: step-up 480ms var(--ease-pop) calc(1.6s + var(--i) * 220ms) both; }
 .page:not(.is-active) .step { opacity: 0; }
 @keyframes step-up { from { opacity: 0; translate: 0 24px; } to { opacity: 1; translate: 0 0; } }
@@ -409,3 +409,9 @@
 }
 
 .hd--fit { width: 100%; font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / (var(--n) + 2.2)); }
+
+.chip { font-size: max(var(--fs-min), calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 30)); padding-inline: 0.5em; white-space: nowrap; flex-shrink: 0; }
+.boss__end { display: flex; flex-direction: column; }
+.boss__end .ln:last-child { order: -1; font-weight: 900; }
+.card--big .card__b { font-size: 1.12em; }
+.brush-close--one { font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 23.5); }
