@@ -139,7 +139,7 @@
 .card { position: relative; display: grid; gap: 0.15em; align-content: start; padding: calc(0.4em + 0.7dvh) 0.7em calc(0.5em + 0.7dvh); background: var(--color-base); box-shadow: var(--shadow-soft); border-top: 5px solid var(--color-red); }
 .card::after { content: ""; position: absolute; right: 0; bottom: 0; width: 0.9em; height: 0.9em; background: var(--color-red); clip-path: polygon(100% 0, 100% 100%, 0 100%); }
 .card--big { grid-column: 1 / -1; isolation: isolate; padding-block: calc(0.6em + 0.8dvh); background: var(--bg-dark); color: var(--color-on-dark); border-top: 0; outline: 3px solid var(--color-gold); outline-offset: -7px; rotate: -2deg; }
-.card--big .card__h { justify-self: start; padding: 0.05em 0.5em; background: var(--color-red-deep); color: var(--color-on-dark); }
+.card--big .card__h { justify-self: center; padding: 0.05em 0.5em; background: var(--color-red-deep); color: var(--color-on-dark); }
 .card--big .card__b { color: var(--color-on-dark); }
 .card--red { background: var(--color-red-deep); border-top: 0; padding-right: 2.6em; }
 .card--red .card__h, .card--red .card__b { color: var(--color-on-dark); }
@@ -150,7 +150,7 @@
 .card__h { font-weight: 900; font-size: 1.05em; color: var(--color-navy); }
 .card__b { font-weight: 700; font-size: max(var(--fs-min), 0.95em); line-height: 1.5; }
 .card__line { display: block; }
-.card__max { font-family: var(--font-impact); font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 7.6); line-height: 1; background: var(--bg-gold); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(2px 2px 0 var(--color-red-deep)); }
+.card__max { font-family: var(--font-impact); font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 8.3); line-height: 1; background: var(--bg-gold); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(2px 2px 0 var(--color-red-deep)); }
 
 .brush { position: relative; display: grid; place-items: center; margin-inline: calc(var(--gutter) * -0.5); padding: 1.1em 1em 1.3em; }
 .brush__bg { position: absolute; inset: 0; width: 100%; height: 100%; fill: var(--color-base); clip-path: inset(-20% 100% -40% -10%); }
@@ -415,3 +415,4 @@
 .boss__end .ln:last-child { order: -1; font-weight: 900; }
 .card--big .card__b { font-size: 1.12em; }
 .brush-close--one { font-size: calc((min(100vw, var(--col)) - 2 * var(--gutter)) / 23.5); }
+.card--big { justify-items: center; text-align: center; padding-inline: 1.2em; }
